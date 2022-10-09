@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Vue Js Template</title>
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="obj">
+            <p>{{showPost()}}</p>
+            <a v-bind:href="link">Link</a>
+        </div>
+        <script>
+            new Vue({
+                el:"#obj",
+                data: {
+                    noidung: "Xin chao cac ban, minh la luan",
+                    title: "Tieu de",
+                    link: "https://google.com"
+                },
+                methods: {
+                    sayHello: function(){
+                        return this.noidung;
+                    },
+                    showPost: function(){
+                        return this.noidung;
+                    }
+                },
+            })
+        </script>
+    </body>
+</html>

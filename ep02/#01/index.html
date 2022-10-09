@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Vue Js Template</title>
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="obj">
+            <p>{{noidung}}</p>
+            <p>{{sayHello()}}</p>
+        </div>
+        <script>
+            new Vue({
+                el:"#obj",
+                data: {
+                    noidung: "Xin chao cac ban, minh la luan"
+                },
+                methods: {
+                    sayHello: function(){
+                        return this.noidung;
+                    }
+                },
+            })
+        </script>
+    </body>
+</html>

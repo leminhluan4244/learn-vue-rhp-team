@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="obj">
+            <input type="text" v-on:input="changeValue" />
+            <p> {{ noidung }}</p>
+        </div>
+        <script>
+            new Vue({
+                el: "#obj",
+                data: {
+                    noidung: "Hello this is first vue application"
+                },
+                methods: {
+                    changeValue: function(event){
+                        this.noidung = event.target.value;
+                    }
+                },
+            })
+        </script>
+    </body>
+</html>

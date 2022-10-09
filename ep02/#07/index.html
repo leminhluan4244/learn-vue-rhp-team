@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Vue Js Template</title>
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="obj">
+            <h1>Bấm nút để tăng giá trị</h1>
+            <button v-on:click="tangGiaTri">Tăng giá trị</button>
+            <p>Giá trị là: {{dem}}</p>
+        </div>
+        <script>
+            new Vue({
+                el:"#obj",
+                data: {
+                    dem: 0,
+                },
+                methods: {
+                    tangGiaTri: function(){
+                        this.dem++;
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
